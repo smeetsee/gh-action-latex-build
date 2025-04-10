@@ -3,7 +3,7 @@ description: "Builds a PDF file from LaTeX source using a Docker container."
 runs:
   using: "docker"
   image: "ghcr.io/smeetsee/latex-docker:master"
-  entrypoint: ["/bin/sh", "-c"]
+  entrypoint: "/bin/sh -c"
   args:
     - pdflatex -shell-escape -interaction=nonstopmode -halt-on-error $1
 inputs:
