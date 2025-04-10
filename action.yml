@@ -2,7 +2,7 @@ name: "LaTeX Build with Docker"
 description: "Builds a PDF file from LaTeX source using a Docker container."
 runs:
   using: "docker"
-  image: "docker://ghcr.io/smeetsee/latex-docker-action:master"
+  image: "docker://ghcr.io/smeetsee/latex-docker-action:latest"
   args:
     - ${{ inputs.tex-file }}
 inputs:
