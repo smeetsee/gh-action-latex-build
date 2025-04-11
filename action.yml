@@ -2,6 +2,7 @@ name: "LaTeX Build with Docker"
 description: "Builds a PDF file from LaTeX source using a Docker container."
 runs:
   using: "docker"
+  entrypoint: "/usr/src/entrypoint.sh"
   image: "docker://ghcr.io/smeetsee/latex-docker-action:latest"
 inputs:
   tex_file:
