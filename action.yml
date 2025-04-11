@@ -4,6 +4,6 @@ runs:
   using: "docker"
   image: "docker://ghcr.io/smeetsee/latex-docker-action:latest"
 inputs:
-  tex-file:
+  tex_file:
     description: "The entry point .tex file to compile."
     required: true
